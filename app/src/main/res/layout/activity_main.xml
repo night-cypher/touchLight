@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+
+        android:background="@drawable/on_btn"
+        android:contentDescription="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/btnSwitch2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/off_btn"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnSwitch"
+        android:layout_alignStart="@+id/btnSwitch"
+        android:layout_alignRight="@+id/btnSwitch"
+        android:layout_alignEnd="@+id/btnSwitch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/btnSwitch2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp" />
+
+
+</RelativeLayout>
